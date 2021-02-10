@@ -1,0 +1,801 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri-340\sl259\slmult1\partightenfactor0
+
+\f0\fs22 \cf0 [pisppost ] \{single\} On May 5th there was an election for the Scottish Parliament. How interested, if at all, were you in this election?\
+<1>  Very interested\
+<2>  Fairly interested\
+<3>  Not very interested\
+<4>  Not at all interested\
+\
+\
+\{page splits\}\
+\{\
+split = random(1,2)\
+\}\
+\{end page splits\}\
+\
+ \
+[pi2a if split == 1]\{single\}Some people think of themselves as usually being a supporter of one political party rather than another (even if they might vote for a different party from time to time). Thinking about UK politics at Westminster, do you usually think of yourself as being a supporter of one particular party or not?\
+<1>  Yes, I do\
+<2>  No, I do not\
+\
+[pi2b if pi2a==1 and split == 1]Which party is that?\
+<1> Labour\
+<2> Conservative\
+<3> Liberal Democrat\
+<4> Scottish National Party\
+<5> Green Party\
+<6> UKIP\
+<7> Other [pi2bo]\{open\}\
+\
+[pi3a if split == 1]\{single\}Thinking now about Scottish politics at Holyrood, do you usually think of yourself as being a supporter of one particular party or not?\
+<1>  Yes, I do\
+<2>  No, I do not\
+\
+[pi3b if pi3a==1 and split == 1] \{single\}Which party is that?\
+<1> Labour\
+<2> Conservative\
+<3> Liberal Democrat\
+<4> Scottish National Party\
+<5> Green Party\
+<6> UKIP\
+<7> Other [pi3bo]\{open\}\
+\
+[pi4a if split == 2]\{single\}Some people think of themselves as usually being a supporter of one political party rather than another (even if they might vote for a different party from time to time). Thinking about Scottish politics at Holyrood, do you usually think of yourself as being a supporter of one particular party or not?\
+<1>  Yes, I do\
+<2>  No, I do not\
+\
+[pi4b if pi4a==1 and split == 2] \{single\}Which party is that?\
+<1> Labour\
+<2> Conservative\
+<3> Liberal Democrat\
+<4> Scottish National Party\
+<5> Green Party\
+<6> UKIP\
+<7> Other [pi4bo]\{open\}\
+\
+[pi5a if split == 2]\{single\}Thinking now about UK politics at Westminster, do you usually think of yourself as being a supporter of one particular party or not?\
+<1>  Yes, I do\
+<2>  No, I do not\
+\
+[pi5b if pi5a==1 and split == 2] \{single\}Which party is that?\
+<1> Labour\
+<2> Conservative\
+<3> Liberal Democrat\
+<4> Scottish National Party\
+<5> Green Party\
+<6> UKIP\
+<7> Other [pi5bo]\{open\}\
+\
+\
+[vb3]\{single\}Which of these statements best describes your attitude towards voting at Scottish Parliament elections?\
+<1>  I always vote at Scottish Parliament elections\
+<2>  I sometimes vote at Scottish Parliament elections\
+<3>  I never vote at Scottish Parliament elections\
+<4>  I haven\'92t been eligible to vote at previous Scottish Parliament elections\
+<5>  Don\'92t know\
+\
+\
+[vb4]\{single\}Talking to people about the election to the Scottish Parliament on 5th May, we have found that a lot of people didn\'92t manage to vote. Which of these statements best describes what you did?\
+<1>  I did not vote in the Scottish Parliament election on 5th May \
+<2>  I thought about voting in the Scottish Parliament election but in the end I didn\'92t\
+<3>  I usually vote but didn\'92t this time    \
+<4>  I definitely voted in the Scottish Parliament election\
+\
+\{module nonvote if vb4 !=4\}\
+\
+[vb5]\{open rows=6 cols=60\}People have many reasons for not voting. Could you tell us why you chose not to vote in the election?<<br/>><<br/>>Please type your answer in the box below. \
+\
+[vb6]\{single\}When did you decide not to vote in this Scottish Parliament election?\
+<1>  On election day\
+<2>  In the last few days of the campaign\
+<3>  Early on in the campaign\
+<4>  In the year or so running up to the election\
+<5>  I never vote\
+<6> It wasn\'92t a decision as such. I just never thought about voting\
+\
+[vb7] \{single\}If you had voted in the Scottish Parliament election, you would have had two votes and two separate ballot papers.  One was for an individual member to represent your CONSTITUENCY.  The other was to vote for a party list for your REGION.<<br/>><<br/>>Which party\'92s candidate do you think you would have voted for in your CONSTITUENCY?  (Note that not all of the parties put up candidates for the constituency seats.) \
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  Scottish National Party\
+<10>  Other party [vb7o]\{open\}\
+<98>  Wouldn\'92t vote\
+<99>  Don't know\
+\
+[vb8] \{single\}And which party do you think you would have voted for on the REGIONAL list?\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  Scottish National Party\
+<5> Green Party        \
+<6> UKIP\
+<7> RISE\
+<8> Solidarity        \
+<10>  Other party or independent candidate [vb8o]\{open\}\
+<98>  Wouldn't vote\
+<99>  Don't know\
+\
+\
+\{end module nonvote\}\
+\
+\{module voter if vb4==4\}\
+\
+[howvotepost] \{single\}Thinking back to election day, which of the following best describes how you cast your ballot\
+<1> By post\
+<2> In person at a polling station\
+<3> Someone voted on my behalf\
+\
+\
+[vb11a]\{open rows=1 cols=60\}What was the <<i>>single most important issue<</i>> for you when deciding how to vote in the Scottish Parliament election? <<br/>><<br/>>Please type your answer in the box below. If you think there were no important issues, please write NONE.\
+\
+[vb11b]\{single\}Which party is best able to handle this issue?\
+<1> There are no important problems\
+<2> None - No Party\
+<3> Labour\
+<4> Conservatives\
+<5> Liberal Democrats\
+<6> Scottish National Party\
+<7> Green Party\
+<8> UKIP\
+<9> Some other party [vb11bo]\{open\}\
+<99> Don\'92t know\
+\
+\
+[vb12]\{single\}In the Scottish Parliament election, you had two votes and two separate ballot papers.  One (on a lilac-coloured ballot paper) was for an individual member to represent your CONSTITUENCY.  The other (on a peach-coloured ballot paper) was to vote for a party list for your REGION.<<br/>><<br/>>Thinking first about your vote for your CONSTITUENCY MSP, which party\'92s candidate did you vote for? (Note that not all of the parties put up candidates for the constituency seats.) \
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  Scottish National Party\
+<10>  Some other party [vb12o]\{open\}\
+<99>  Can\'92t remember\
+\
+\
+[vb13]\{single\}Still thinking of this constituency vote, which of the following comes closest to the main reason why you voted for this party\'92s candidate?\
+<1>  I always vote this way\
+<2>  The party has the best policies\
+<3>  The party has the best leader\
+<4> I voted for a specific candidate, regardless of party\
+<5>  It was a tactical vote. I voted to stop another party from winning in my constituency\
+<6>  I really prefer another party, but they had no chance of winning in my constituency\
+<7>  I really prefer another party, but they were not standing a candidate in my constituency\
+<8>  Other reasons [vb13o]\{open\}\
+\
+\
+\
+[vb14a if vb13 in [6,7]] \{single\}Which party did you really prefer?\
+<1 if vb12 !=1>  Conservative\
+<2 if vb12 !=2>  Labour\
+<3 if vb12 !=3>  Liberal Democrat\
+<4 if vb12 !=4>  Scottish National Party\
+<10>  Other party [vb14ao]\{open\}\
+\
+[vb14b if vb13 ==5]\{single\}Which party did you want to stop from winning in your constituency?\
+<1 if vb12 !=1>  Conservative\
+<2 if vb12 !=2>  Labour\
+<3 if vb12 !=3>  Liberal Democrat\
+<4 if vb12 !=4>  Scottish National Party\
+<10>  Other party [vb14bo]\{open\}\
+\
+\
+[vb15]Thinking now about your vote on the REGIONAL list, which party did you vote for?\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  Scottish National Party\
+<5> Green Party\
+<6> UKIP\
+<7> RISE\
+<8> Solidarity        \
+<10>  Other party or independent candidate [vb15o]\{open\}\
+<99> Can\'92t remember\
+\
+[vb16]Still thinking of this regional vote, which of the following comes closest to the main reason why you voted for this party?\
+<1>  I always vote this way\
+<2>  The party has the best policies\
+<3>  The party has the best leader\
+<4> I voted for a specific candidate, regardless of party\
+<5>  It was a tactical vote. I voted to stop another party from winning in my region\
+<6>  I really prefer another party, but they had no chance of winning in my region\
+<7>  I really prefer another party, but they were not standing a candidate in my region\
+<8>  Other reasons [vb16o]\{open\}\
+\
+\
+[vb17a if vb16 in [6, 7]]\{single\}Which party do you really prefer?\
+<1 if vb15 !=1>  Conservative\
+<2 if vb15 !=2>  Labour\
+<3 if vb15 !=3>  Liberal Democrat\
+<4 if vb15 !=4>  Scottish National Party\
+<5 if vb15 !=5>  Green\
+<6 if vb15 !=6>  UKIP\
+<7 if vb15 !=7>  RISE\
+<8 if vb15 !=8>  Solidarity\
+<10> Some other party [vb17o]\{open\}\
+\
+[vb17b if vb16 ==5]Which party did you want to stop from winning in your region?\
+<1 if vb15 !=1>  Conservative\
+<2 if vb15 !=2>  Labour\
+<3 if vb15 !=3>  Liberal Democrat\
+<4 if vb15 !=4>  Scottish National Party\
+<5 if vb15 !=5>  Green\
+<6 if vb15 !=6>  UKIP\
+<7 if vb15 !=7>  RISE\
+<8 if vb15 !=8>  Solidarity\
+<10> Some other party [vb17bo]\{open\}\
+\
+\
+[vb18]\{single\} When did you decide how you would vote in this Scottish Parliament election?\
+<1>  At the polling station\
+<2>  In the last few days of the campaign\
+<3>  Early on in the campaign\
+<4>  In the year or so running up to the election\
+<5>  I always vote the same way\
+\
+[vb21 if (vb12 in [1,2,3,4,10] and vb15 in [1,2,3,4,5,6,7,8,10]) and (vb12 != vb15)] \{single\} Quite a few voters these days vote for different parties on the constituency and regional list ballots.  Which of the following best describes why you did so? \
+<1> The party I prefer only stands on the regional ballot\
+<2> The constituency vote is for your first preference and the regional vote is for your second preference\
+<3> My preferred party was going to do so well on the constituencies that there was no point voting for it on the regional list\
+<4> I don\'92t like any party enough to vote for it twice\
+<5> I used the regional ballot to vote for my preferred First Minister\
+<6> I wanted to make sure that there was a wide variety of voices in Holyrood \
+<7> I didn\'92t really like any of the regional candidates for my preferred party\
+<8> I was voting tactically\
+\
+ \
+\
+\{end module voter\}\
+\
+\pard\pardeftab720\ri-340\partightenfactor0
+\cf0 [uk2] \{single\} If there were a Westminster election held tomorrow, which party would you vote for?\
+<1>\'a0 Conservative\
+<2>\'a0 Labour\
+<3>\'a0 Liberal Democrat \
+<4>\'a0 SNP\
+<5>\'a0 Green\
+<6>\'a0 UKIP\
+<7>\'a0 Other party [uk2o]\{open\}\'a0\'a0\'a0\'a0\'a0\'a0 \
+<8>\'a0 Would not vote \
+<9>\'a0 Don't know\
+\pard\pardeftab720\ri-340\sl259\slmult1\partightenfactor0
+\cf0 \
+\{page information\} \
+\
+**People get information about elections and politics from a variety of sources. What about you? For each of the following can you tell me about the information on the Scottish Parliament election that you\'92ve received?** \
+ \
+[PE1] \{scale 1 5\} Family and friends\
+-[PE1_1] No information | A lot of information\
+\
+[PE2] \{scale 1 5\} Scottish government\
+-[PE1_2] No information | A lot of information\
+\
+[PE3] \{scale 1 5\} UK government\
+-[PE1_3] No information | A lot of information\
+\
+[PE4] \{scale 1 5\} Political party websites\
+-[PE1_4] No information | A lot of information\
+\
+[PE5] \{scale 1 5\} Political party leaflets\
+-[PE1_5] No information | A lot of information\
+\
+[PE6] \{scale 1 5\} Political party street stalls\
+-[PE1_6] No information | A lot of information\
+\
+[PE7] \{scale 1 5\} Electoral Commission\
+-[PE1_7] No information | A lot of information\
+\
+[PE8] \{scale 1 5\} Newspapers (print or online)\
+-[PE1_8] No information | A lot of information\
+\
+[PE9] \{scale 1 5\} Radio\
+-[PE1_9] No information | A lot of information\
+\
+[PE10] \{scale 1 5\} Television\
+-[PE1_10] No information | A lot of information\
+\
+[PE11] \{scale 1 5\} The internet\
+-[PE1_11] No information | A lot of information\
+\
+\{end page information\}\
+\
+## REACTIONS TO CAMPAIGN AND RESULTS\
+\
+[happyScotelecresultscale] \{scale 0 10 dk=1 dk_text="Don\'92t know"\} Overall, how happy or how disappointed are you with the results of the Scottish Parliament elections last week?\
+-[happyScotelecresult] Extremely disappointed | Extremely happy\
+\
+\
+[eleccontactwhopost] \{multiple\} Could you indicate which political parties \'96 if any \'96 have contacted you during the past four weeks? Please select all that apply\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  SNP\
+<5>  Green Party    \
+<6>  UKIP \
+<7>  RISE\
+<8>  Solidarity\
+<9>  Other party or independent candidate\
+<99fixed xor> None of these \
+\
+\
+[eleccontacthowpost if eleccontactwhopost.has_any ([1,2,3,4,5,6,7,8])] \{grid-check roworder=randomize colorder=randomize\} Could you indicate all the ways that you have been contacted, again selecting all that apply?\
+-[elecContactHowPost_g1] Telephone call\
+-[elecContactHowPost_g2] Leaflet or letter delivered to your home\
+-[elecContactHowPost_g4] A visit to your home\
+-[elecContactHowPost_g5] Contact in the street/street stall\
+-[elecContactHowPost_g6] Email\
+-[elecContactHowPost_g7] Twitter\
+-[elecContactHowPost_g8] Facebook\
+-[elecContactHowPost_g9] Text message (SMS)\
+-[elecContactHowPost_g10] \{fixed=1\} Other Ways\
+<1 if 1 in eleccontactwhopost> Conservative\
+<2 if 2 in eleccontactwhopost> Labour\
+<3 if 3 in eleccontactwhopost> Liberal Democrat\
+<4 if 4 in eleccontactwhopost> SNP\
+<5 if 5 in eleccontactwhopost>  Green Party    \
+<6 if 6 in eleccontactwhopost> UKIP\
+<7 if 7 in eleccontactwhopost> RISE\
+<8 if 8 in eleccontactwhopost> Solidarity\
+<99xor fixed> None of these \
+\
+[ca14]\{grid roworder=randomize\} Campaigning is said to be \'91positive\'92 when it involves putting forward your own policies and personalities.  \'91Negative\'92 campaigning means attacking the policies and personalities of the other parties.  How would you rate the campaigns of the following parties on a scale from \'91very positive\'92 to \'91very negative\'92?\
+-[ca14a]Conservative\
+-[ca14b]Labour\
+-[ca14c]Liberal Democrats\
+-[ca14d]SNP\
+<1>  Very positive\
+<2>  Fairly positive\
+<3>  Neither positive nor negative\
+<4>  Fairly negative\
+<5>  Very negative\
+<6>  Don\'92t know\
+\
+\
+[ca15]\{single\}There was some discussion about income tax during this election campaign.  Which of these best reflects your view?\
+<1>  The Scottish Government should increase income taxes, even if that makes them higher than the rest of the UK \
+<2>  The Scottish Government should keep income taxes the same as in the rest of the UK\
+<3>  Don\'92t know\
+\
+\
+\{page int\}\
+\
+Some people say that all political parties look after certain groups and are not so concerned about others.  How closely do you think the different parties look after the interests of these groups?\
+\
+\{end page int\}\
+ \
+\{module sol order=randomize\}\
+ \
+[so1grid1]\{grid\}Working class people\
+-[so1a]Conservatives\
+-[so1b]Labour\
+-[so1c]SNP\
+<1>  Very closely\
+<2>  Fairly closely\
+<3>  Not very closely\
+<4>  Not at all closely\
+<5>  Don\'92t know\
+\
+[so1grid2]\{grid\}Middle class people\
+-[so1d]Conservatives\
+-[so1e]Labour\
+-[so1f]SNP\
+<1>  Very closely\
+<2>  Fairly closely\
+<3>  Not very closely\
+<4>  Not at all closely\
+<5>  Don\'92t know\
+\
+[so1grid3]\{grid\}Women\
+-[so1g]Conservatives\
+-[so1h]Labour\
+-[so1j]SNP\
+<1>  Very closely\
+<2>  Fairly closely\
+<3>  Not very closely\
+<4>  Not at all closely\
+<5>  Don\'92t know\
+\
+[so1grid4]\{grid\}Pensioners\
+-[so1k]Conservatives\
+-[so1m]Labour\
+-[so1n]SNP\
+<1>  Very closely\
+<2>  Fairly closely\
+<3>  Not very closely\
+<4>  Not at all closely\
+<5>  Don\'92t know\
+\
+[so1grid5]\{grid\}People running businesses\
+-[so1p]Conservatives\
+-[so1q]Labour\
+-[so1r]SNP\
+<1>  Very closely\
+<2>  Fairly closely\
+<3>  Not very closely\
+<4>  Not at all closely\
+<5>  Don\'92t know\
+\
+\{end module sol\}\
+\
+\
+\
+[govtFormPref]\{single\} Which do you think would generally be better for Scotland nowadays?  \
+<1> To have a majority government in Edinburgh formed by one political party on its own \
+<2> To have a minority government in Edinburgh formed by one political party on its own\
+<3> To have a coalition government in Edinburgh formed by two or more political parties\
+<99> Don\'92t know\
+\
+\
+[minGovtImpact]\{grid roworder=randomize\} One consequence of the 2016 election is that the SNP will go from being a majority to a minority government in Holyrood. How much difference do you think this will make to the following:\
+-[minGovtImpactIndep]The chances of Scotland becoming independent\
+-[minGovtImpactRep]Ensuring that government policy reflects the interests of as much of the electorate as possible\
+<1> A lot of difference\
+<2> A little difference\
+<3> Not very much difference\
+<4> No difference at all\
+<99> Don\'92t know\
+\
+[con2ndImpact]\{grid roworder=randomize\} Another consequence was that the Conservatives are now the largest opposition party in the Parliament. How much difference do you think this will make to the following:\
+-[con2ndImpactIndep]The chances of Scotland becoming independent\
+-[con2ndImpactRep]The level of taxes and spending\
+<1> A lot of difference\
+<2> A little difference\
+<3> Not very much difference\
+<4> No difference at all\
+<99> Don\'92t know\
+\
+[labTroubles] \{single order=randomize\}This was Labour\'92s worst performance in a Scottish election for decades.  Various reasons have been put forward for why Labour is struggling so much in Scotland at the moment. Which of these do you think is the most important reason? \
+<1> They backed the wrong side in the referendum\
+<2> They don\'92t have a clear policy on the constitution going forward\
+<3> They are too far to the right\
+<4> They are too far to the left\
+<5> They\'92re too much in the pockets of the UK Labour Party down in London\
+<6> They just don\'92t understand the Scottish electorate any more\
+<7> They keep picking the wrong leader\
+<8fixed> Other [labTroubleso]\{open\}\
+<99fixed> Don't know\
+\
+\
+\
+\
+[de4grid] \{grid roworder=randomize\}To what extent do you agree or disagree with the following statements about the election for the Scottish Parliament?\
+-[de4a]The election campaign gave me enough information to make an informed choice\
+-[de4c]During the election campaign, the parties talked about the issues that really matter to me\
+-[de4e]The Parliament election was completely overshadowed by the EU referendum\
+-[de4f]The parties were completely invisible; I didn\'92t hear anything from any of them\
+<1>Strongly agree\
+<2>Tend to agree\
+<3>Neither agree nor disagree\
+<4>Tend to disagree\
+<5>Strongly disagree\
+<99>Don\'92t know\
+\
+\
+\
+\
+[leaderperfgrid] \{grid roworder=randomize\}And here are some questions about political leaders and how they performed in the election campaign. Please rate each one on this scale where 0 means very badly and 10 means very well.  \
+-[leaderperfgrid_1] Nicola Sturgeon\
+-[leaderperfgrid_2] Ruth Davidson\
+-[leaderperfgrid_3] Kezia Dugdale\
+ <1> 0 - Very badly\
+ <2> 1\
+ <3> 2\
+ <4> 3\
+ <5> 4\
+ <6> 5\
+ <7> 6\
+ <8> 7\
+ <9> 8\
+ <10> 9\
+ <11> 10 - Very well\
+ <12> Don\'92t know\
+\
+[leaderVisitAwarepost]\{multiple order=randomize\} To the best of your knowledge, did any of the party leaders visit your constituency in the four weeks before the election? If so, please indicate which one(s)? (Please tick all that apply.)\
+<1> Nicola Sturgeon\
+<2> Ruth Davidson\
+<3> Kezia Dugdale\
+<4> Willie Rennie\
+<5> Patrick Harvie\
+<6fixed> Someone else [leaderVisitAwareo]\{open\}\
+<7fixed xor> No visits that I\'92m aware of\
+\
+[leaderVisitInfluencepost if leaderVisitAwarepost.has_any([1,2,3,4,5,6])] \{single\} Which of these best describes the influence, if any, that leader visit(s) had on your choice?\
+<1>    Got me seriously thinking about voting for this party\
+<2>    Got me seriously thinking about voting for another party\
+<3>    Changed my mind completely: I will vote for this party\
+<4>    Changed my mind completely: I will vote for another party\
+<5>    No change / influence\
+\
+[leadervisitimpact]\{single\} Some people say that these visits are an important way in which leaders can hear directly from voters.  Others say that they are all about publicity and not about listening to voters. Which of these following statements is closer to your opinion about leader visits? \
+<1> They are an important way in which leaders can hear directly from voters\
+<2>They are just an excuse for publicity and not about listening to voters\
+<99> Don\'92t know\
+\
+\
+#EU referendum#\
+\
+\
+[euRefIntention]\{single\}  Now we would like to ask you about the upcoming referendum on the UK\'92s membership in the European Union.<<br/>><<br/>> It will ask \'93Should the United Kingdom remain a member of the European Union or leave the European Union?\'94  How do you think you will vote?\
+<1> To remain a member of the European Union\
+<2> To leave the European Union\
+<3> Will not vote\
+<99> Don't know\
+\
+[euReferendumLeaning if euRefIntention==99]\{single\} If you had to choose, what is your best guess at how you will vote?\
+<1> I will vote for the UK to \'91Remain\'92 in the EU\
+<2> I will vote for the UK to \'91Leave\'92 the EU\
+<9> Really can\'92t choose\
+\
+[indyreftwowhen] \{single\} Meanwhile, there are different views about the possibility of a second referendum on Scottish independence. Which of these comes closest to your view?\
+<1> There should never be a second independence referendum\
+<2> There should not be a second independence referendum within the next five years but perhaps after that\
+<3> There should be another referendum on independence within the next five years\
+<99> Don\'92t know\
+\
+[indyreftwowhy if indyreftwowhen in [2,3]] \{single\} Which, for you, would be the single most important trigger to hold a second referendum on independence ? \
+<1> That the SNP has just won another election\
+<2> If the UK votes to leave the European Union\
+<3>  If there is clear and sustained evidence that independence has become the preferred option of a majority of the Scottish people \
+<4> If the SNP campaigns in the **next** Scottish Parliament election to hold a referendum and forms another government\
+<5> If the UK government introduces policies that Scots don\'92t support\
+<6> If the Scottish economy grows strongly\
+<7> If there are other significant and material changes in economic or political circumstances\
+\
+[indyreftwopoll if indyreftwowhen in [2,3]] \{single\} The SNP has said that they will await \'91clear and sustained evidence that independence has become the preferred option of a majority of the Scottish people\'92 before bidding for a second referendum.  For you, what would indicate such clear and sustained evidence?\
+<1> Once there are five polls showing at least 52% support for independence\
+<2> Once there are five polls showing at least 60% support for independence\
+<3> If support for independence is more than 50% for six months\
+<4> If support for independence is more than 50% for two years \
+\
+[brexitindymore] \{single\} Some people believe that the result of the 23rd June referendum on UK membership in the EU will affect their preferences in a Scottish independence referendum. Others say it will make no difference.  What about you? What best describes how the results of the referendum on 23rd June will affect your support for Scottish independence? \
+<1> The June referendum on EU membership will makes no difference to my views on Scottish independence\
+<2> The June referendum on EU membership will definitely affect my views on Scottish independence\
+<3> The June referendum on EU membership will affect my views on independence only if the UK votes to Leave the EU\
+<4> The June referendum on EU membership will affect my views on independence only if the UK votes to Remain in the EU\
+\
+[brexitindyhow if brexitindymore in [2,3,4]] \{single\} How would it change your views?\
+<1> It would make me more likely to vote Yes to Scottish independence\
+<2> It would make me more likely to vote No to Scottish independence\
+<99> Don\'92t know\
+\
+\
+#IndyRef aftermath# \
+[happyScotIndepResultNoW3]\{scale 0 10 dk=1 dk_text="Don't know"\} Looking back on the Scottish Independence Referendum held in 2014, how happy or how disappointed are you that the "No" side won the referendum?\
+-[happyScotIndepResultNoScaleW3] Extremely disappointed |  Extremely happy\
+\
+[emotScotIndepW3]\{grid roworder=randomize\}  And, on a similar scale from 0 to 10, could you say how much you feel about each of these when you look back on Scotland\'92s vote to remain in the UK?\
+-[emotScotIndepFearW3] Afraid\
+-[emotScotIndepExciteW3] Excited\
+-[emotScotIndepReliefW3] Relieved\
+-[emotScotIndepAngryW3] Angry\
+-[emotScotIndepHopeW3] Hopeful\
+<111> 0 \'96 Not at all\
+<1> 1\
+<2> 2\
+<3> 3\
+<4> 4\
+<5> 5\
+<6> 6\
+<7> 7\
+<8> 8\
+<9> 9\
+<10> 10 \'96 Extremely\
+\
+\
+[refClimate]\{single\} Some people have said that the 2014 referendum made the Scots more active and involved in politics. Others have said that it made no difference. What about you?  \
+<1> I haven\'92t noticed it making any difference to anyone\
+<2> I\'92ve noticed others getting more involved but it hasn\'92t made any difference to me\
+<3> I've not noticed others getting more involved but I have\
+<4> It\'92s got me a bit more involved\
+<5> It\'92s got me a lot more involved \
+\
+[refClimateFuture if refClimate in [3,4,5]]\{grid roworder=randomize\} And what do you think will continue to happen to levels of political involvement in Scotland  \'96 both your own and in the Scottish public as a whole \'96 in the future?\
+-[refClimateFutSelf] Yourself\
+-[refClimateFutScot] The Scottish public\
+<1>  Will stay more involved\
+<2>  Will go back to normal\
+<99> Don\'92t know\
+\
+\
+\{page knowledge_01 timeout=30\}\
+\
+[legknowledgegrid] \{grid roworder=randomize\} The Scottish Parliament has recently acquired new powers.  Keeping in mind these new powers, which level of government in the UK do you think is now responsible for making decisions in the following policy areas?  \
+ -[legknowlegdegrid_1] Education\
+ -[legknowlegdegrid_2] Agriculture, forestry and fisheries\
+ -[legknowlegdegrid_3] Health/NHS\
+ -[legknowlegdegrid_4] Local government\
+ -[legknowlegdegrid_5] Environment\
+ -[legknowlegdegrid_6] Defence\
+ -[legknowlegdegrid_7] Foreign Affairs\
+ -[legknowlegdegrid_8] Income Taxes\
+ -[legknowlegdegrid_9] Pensions\
+ -[legknowlegdegrid_10] Welfare benefits including unemployment\
+ -[legknowlegdegrid_11] Energy\
+ -[legknowlegdegrid_12] Immigration\
+<1> Scottish Parliament now makes decisions\
+<2> UK Parliament now makes decisions\
+\
+\{end page knowledge_01\}\
+\
+\
+\
+[competidealgrid] \{grid roworder=randomize\} Imagine that each of the following taxes and benefits was partly or fully devolved to Scotland. For each, please say whether you think the Scottish Government should set the tax or benefit at a lower rate than in the UK, at the same rate as in the UK, or at a higher rate than in the UK.\
+ -[competidealgrid_1] Income tax\
+ -[competidealgrid_2] Corporation tax\
+ -[competidealgrid_3] VAT\
+ -[competidealgrid_4] Tax on North Sea oil and gas revenues\
+ -[competidealgrid_5] State Pension\
+ -[competidealgrid_6] Disability benefits\
+ -[competidealgrid_7] Other welfare  benefits\
+ <1> Lower rate than in the UK currently\
+ <2> Same rate as in the UK currently\
+ <3> Higher rate than in the UK currently\
+\
+[fairShareGrid]\{grid width=100\} Would you say that each of these nations gets more or less than its fair share of UK government spending?\
+-[engFairShare] England\
+-[scotFairShare] Scotland\
+-[walesFairShare] Wales\
+<1> Much less than its fair share\
+<2> A little less than its fair share\
+<3> Roughly its fair share\
+<4> A little more than its fair share\
+<5> Much more than its fair share\
+<99>Don't know\
+\
+\
+\
+[partyScstandup] \{grid roworder = randomize\} And how well do you think each of these stand up for Scotland\'92s interests? (Please tick one option on each horizontal row)\
+ -[partyScstandup_1] Scottish Labour Party\
+ -[partyScstandup_2] SNP\
+ -[partyScstandup_3] Scottish Conservative Party\
+ -[partyScstandup_4] Scottish Liberal Democrats\
+<1> Very well\
+<2> Quite well\
+<3> Not very well\
+<4>Not at all\
+<99> Don\'92t know\
+ \
+[amsdifficult] \{single\} Some people say that it is difficult to understand how the number of seats a party wins is worked out under the voting system used in Scottish Parliament elections.  Others say that it is not at all difficult. How difficult do YOU think it is to understand how the seats are worked out? \
+<1> Very difficult \
+<2> Fairly difficult \
+<3> Not very difficult \
+<4> Not at all difficult \
+<5> Can\'92t choose \
+\
+[esysviewsgrid] \{grid roworder = randomize\} Here are some statements that people have made about the Scottish Parliament electoral system. For each one, please could you say how true you think it is? (Please tick one option on each horizontal row)\
+ -[esysviewsgrid_1] You can\'92t vote for the same party in both the constituency and the regional list votes\
+ -[esysviewsgrid_2] If you\'92re going to vote for a small party, you\'92re better off choosing it in the regional list vote than in the constituency vote\
+ -[esysviewsgrid_3] Where a party is very strong, there isn\'92t much point voting for it on the regional list\
+ -[esysviewsgrid_4] The number of seats won by a party is decided by the number of constituency votes it gets\
+<1> Definitely true \
+<2> Probably true \
+<3> Probably not true \
+<4> Definitely not true\
+<99> Don\'92t know\
+\
+#MISCELLANEOUS POLITICAL#\
+\
+\
+[efficGeneral2]\{grid roworder=randomize\}To what extent do you agree or disagree with these statements? \
+-[efficDontCare2] Politicians don\'92t care much about what people like me think.\
+-[efficNoSay2] People like me don\'92t have any say about what the government does\
+-[efficComplicated2] Sometimes politics and government seem so complicated that a person like me can\'92t really understand what\'92s going on\
+-[scotGovUKrels]Government ministers in the Scottish Executive should always stand up for what they think is best for Scotland, even if it means having serious rows with the UK Government at Westminster \
+-[votesAt16]The voting age should be lowered to 16 for all elections and referendums in Scotland, the UK, and Europe\
+<1> Strongly agree\
+<2> Agree\
+<3> Neither agree nor disagreement\
+<4> Disagree\
+<5> Strongly disagree\
+<99> Don\'92t know\
+\
+[PTVGrid1]\{grid width=25\} We have a number of parties in Scotland, each of which would like to get your vote. Using a scale that runs from 0 to 10, where 0 means very unlikely and 10 means very likely, how likely is it that you would ever vote for each of the following parties? \
+-[ptvCon] Conservatives\
+-[ptvLab] Labour\
+-[ptvLD] Liberal Democrats\
+-[ptvSNP] Scottish National Party\
+-[ptvGrn] Green Party\
+-[ptvUKIP] UK Independence Party\
+<1> 0 \'96 Very unlikely\
+<2> 1\
+<3> 2\
+<4> 3\
+<5> 4\
+<6> 5\
+<7> 6\
+<8> 7\
+<9> 8\
+<10> 9\
+<11> 10 \'96 Very likely\
+\
+\
+\
+\
+\{page leftRightSelf\}\
+\
+ [leftRight]\{scale 0 10 dk = 1 dk_text="Don't know"\} In politics people sometimes talk of Left and Right. Where would you place yourself on the following scale? \
+ -[leftrightResponse] Left | Right\
+\
+\{end page leftRightSelf\}\
+\
+\{page parties\}\
+\
+**And where would you place the following parties on that same scale?**\
+\
+[LRSNP] \{scale 0 10 dk=1 dk_text="Don't know"\} Scottish National Party\
+-[leftrightResponse1] Left | Right\
+\
+[LRScCon] \{scale 0 10 dk=1 dk_text="Don't know"\} Scottish Conservatives\
+-[leftrightResponse2] Left | Right\
+\
+[LRSLD] \{scale 0 10 dk=1 dk_text="Don't know"\} Scottish Liberal Democrats\
+-[leftrightResponse3] Left | Right\
+\
+[LRSlab] \{scale 0 10 dk=1 dk_text="Don't know"\} Scottish Labour Party\
+-[leftrightResponse4] Left | Right\
+\
+[LRUKLab]  \{scale 0 10 dk=1 dk_text="Don't know"\}UK Labour Party\
+-[leftrightResponse5] Left | Right\
+\
+[LRUKCon]  \{scale 0 10 dk=1 dk_text="Don't know"\}UK Conservative Party\
+-[leftrightResponse6] Left | Right\
+\
+[LRUKLibDem]  \{scale 0 10 dk=1 dk_text="Don't know"\}UK Liberal Democrats\
+-[leftrightResponse7] Left | Right\
+\
+\{end page parties\}\
+\
+\
+\{page satDemPage\}\
+\
+[satDem]\{grid roworder=randomize\} On the whole, how satisfied or dissatisfied are you with the way that democracy works in:\
+-[satDemUK] The UK as a whole\
+-[satDemScot] Scotland\
+-[satDemEU] The European Union\
+<1> Very dissatisfied\
+<2> Fairly dissatisfied\
+<3> Fairly satisfied\
+<4> Very satisfied\
+<99> Don't know\
+\
+\{end page satDemPage\}\
+\
+\
+[ca7grid]\{grid roworder=randomize\}How much do you agree or disagree with the following statements about elections:\
+-[ca7a] Local party activity is vital as it provides me with information about local candidates and the main issues in the election\
+-[ca7b] Being contacted by a local party has an influence on which party I support in the election\
+-[ca7c] Being contacted by a local party has an influence on whether I vote or not\
+-[ca7d] I would pay more attention to the local activity of parties if they contacted me not just at election time\
+<1>  Agree strongly\
+<2>  Tend to agree\
+<3>  Neither agree nor disagree\
+<4>  Tend to disagree\
+<5>  Disagree strongly\
+\
+[polActivities] \{grid roworder=randomize\} Let\'92s think about the next few years. Using a scale from 0 to 10, where 0 means very unlikely and 10 means very likely, how likely is it that you will\'85\
+-[polActVoteEP]Vote in the next election for the European Parliament\
+-[polActVoteLoc]Vote in the next local government election\
+-[polActWorkLoc] Work actively with a group of people to address a public issue or solve a problem\
+-[polActProtest]Participate in a protest, like a rally or demonstration, to show your concern about a public issue or problem\
+-[polActGiveParty] Give money to a political party\
+-[polActPartyAct]Work for a party or candidate in an election campaign\
+-[polActBoycott]Join a boycott \'96 that is, refuse to buy a particular product or to shop at a particular store\
+-[polActPosBoycott]Deliberately buy certain items for political, ethical or environmental reasons\
+-[polActDiscuss]Discuss politics with family and friends \
+ <1> 0 - Very unlikely \
+ <2> 1\
+ <3> 2\
+ <4> 3\
+ <5> 4\
+ <6> 5\
+ <7> 6\
+ <8> 7\
+ <9> 8\
+ <10> 9\
+ <11> 10 - Very likely \
+ <12> Don't know\
+\
+}

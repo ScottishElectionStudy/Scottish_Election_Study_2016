@@ -1,0 +1,1139 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri-340\sl259\slmult1\partightenfactor0
+
+\f0\fs22 \cf0 #Interest and ID#\
+\
+[pi1grid]\{grid roworder=randomize\} Please could you tell us how interested, if at all, you are in each of these? \
+-[pi1a] Politics in general\
+-[pi1b] The Scottish Parliament election on 5th May 2016\
+-[pi1c] The referendum on UK membership in the European Union on 23 June 2016\
+-[pi1d] May 2015 UK General Election \
+<1>  Very interested\
+<2>  Fairly interested\
+<3>  Not very interested\
+<4>  Not at all interested\
+\
+\
+[pi4a]\{single\} Some people think of themselves as usually being a supporter of one political party rather than another. Do you usually think of yourself as being a supporter of one particular party or not?\
+<1>  Yes, I do\
+<2>  No, I do not\
+\
+[pi4b if pi4a==1] Which party is that?\
+<1> Conservative\
+<2> Labour\
+<3> Liberal Democrat\
+<4> Scottish National Party (SNP)\
+<5> Green Party\
+<6> UK Independence Party (UKIP)\
+<7> Other [pi4bo]\{open\}\
+ \
+[pi4c if pi4a==2]\{single\} Do you generally think of yourself as a little closer to one of the parties than the others? If so, please say here which party this is. If not, please choose 'No - None'.\
+<1> Conservative\
+<2> Labour\
+<3> Liberal Democrat\
+<4> Scottish National Party (SNP)\
+<5> Green Party\
+<6> United Kingdom Independence Party (UKIP) \
+<7> Other  [pi4co]\{open\}\
+<8> No - None \
+\
+[pi4d if (pi4b in [1,2,3,4,5,6,7] or pi4c in [1,2,3,4,5,6,7])] \{single\} Would you call yourself a very strong, fairly strong, or not very strong supporter of that party?\
+<1> Very strong\
+<2> Fairly strong\
+<3> Not very strong\
+\
+\
+#VoteIntention#\
+\
+\
+[vi1]On a scale of 0 \'91certain NOT to vote\'92 to 10 \'91absolutely certain to vote\'92, how likely are you to vote in the Scottish Parliament election on May 5th?\
+<1>  0 \'96 Certain NOT to vote\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely certain to vote\
+<99>  Don\'92t know\
+\
+\
+\
+**If you do vote in the Scottish Parliament election, you will receive two separate ballot papers.  One is to vote for an individual member to represent your CONSTITUENCY.  The other is to vote for a party list for your REGION.**\
+\
+[vi9] \{single\} Thinking first about your vote for your CONSTITUENCY MSP, how sure are you about which candidate you will vote for?  Using a scale from 0 to 10, where 0 means \'91not at all sure\'92 and 10 means \'91absolutely sure\'92, how sure are you about which way to vote? \
+<1>  0 \'96 Not at all sure\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely sure\
+\
+[vi10] And which party\'92s candidate are you most likely to vote for in your _constituency_? (Note that not all of the parties are putting up candidates for the constituency seats.) \
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  SNP\
+<5>  Other party or independent candidate [vi10o]\{open\}\
+<98>  Wouldn't vote\
+<99>  Don't know\
+\
+\
+[vi11] \{single\} Thinking now about your vote on the REGIONAL list, how sure are you about which party you will vote for?  Using a similar scale from 0 to 10, where 0 means \'91not at all sure\'92 and 10 means \'91absolutely sure\'92, how sure are you about which way to vote?\
+<1>  0 \'96 Not at all sure\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely sure\
+\
+\
+[vi12] And which party are you most likely to vote for in your _region_?\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  SNP\
+<5>  Green Party    \
+<6>  UKIP \
+<7>  RISE\
+<8>  Solidarity\
+<9>  Other party or independent candidate\
+<98>  Wouldn't vote\
+<99>  Don't know\
+\
+##those who say other than Certain NOT to vote\
+\
+[vi13 if vi1 !=1] \{single\} In deciding how to vote in the Scottish Parliament election, will you decide\'85?\
+<1>  Mostly according to what is going on in Scotland\
+<2>  Mostly according to what is going on in Britain as a whole\
+<3>  Other reasons [vi13o]\{open\}\
+<4> Not sure\
+\
+\
+[vi16grid]\{grid roworder=randomize\}Using a scale from 0 to 10, where 0 means \'91very unlikely\'92 and 10 means \'91very likely\'92, how likely is it that each of the following parties will win the election in your constituency?\
+-[vi16a] Conservative\
+-[vi16b] Labour\
+-[vi16c] Liberal Democrat\
+-[vi16d] SNP\
+<1>  0 \'96 very unlikely\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 very likely\
+<99>  Don\'92t know\
+\
+\
+[vi17grid] \{grid \} On a scale of 0 to 10, where 0 means \'91I don\'92t care at all\'92 and 10 means \'91I care a lot\'92, how much do you care about the following?\
+-[vi17a] Which candidate is elected in your constituency \
+-[vi17b] Which party will form the government in Holyrood after the election \
+-[vi17c] The outcome of the 23rd June referendum on EU membership\
+<1>  0 \'96 I don\'92t care at all\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 I care a lot\
+<99>  Don\'92t know\
+\
+\
+[pi3a]\{multiple\} As far as you are aware, which party or parties have had ministers in the Scottish Government between 2011 and now? (Please tick any that apply)\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat\
+<4>  Scottish National Party\
+<5 xor> None of these\
+<6 xor>  Don\'92t know\
+\
+\
+#ISSUES#\
+\
+[miiUK]\{open rows=1 cols=60 dk=1\} Now, we\'92d like to ask you a few questions about the issues and problems facing the UK as a whole and Scotland in particular.  First, as far as you\'92re concerned, what is the <<i>>single most important issue<</i>> facing the UK at the present time? <<br/>><<br/>>Please type your answer in the box below.\
+\
+\
+[miiUKbest if miiUK != '__DK__' ]\{single\} Which party is best able to handle this issue?\
+<1> There are no important problems\
+<2> No Party is able to handle this issue\
+<3> Labour\
+<4> Conservatives\
+<5> Liberal Democrats\
+<6> Scottish National Party\
+<7> Green Party\
+<8> Other\
+<99> Don't know\
+\
+\
+\
+[miiSco]\{open rows=1 cols=60 dk=1\}And what is the <<i>>single most important issue<</i>> facing Scotland at the present time? <<br/>><<br/>>Please type your answer in the box below.\
+\
+[miiScobest if miiSco != '__DK__' ]\{single\}Which party is best able to handle this issue?\
+<1> There are no important problems\
+<2> No Party is able to handle this issue\
+<3> Labour\
+<4> Conservatives\
+<5> Liberal Democrats\
+<6> Scottish National Party\
+<7> Green Party\
+<8> Other\
+<99> Don't know\
+\
+\
+[is4grid]\{grid\} Thinking about Scottish politics, using a scale where 0 means \'91no trust at all\'92 and 10 means \'91a great deal of trust\'92, how far do you trust the Scottish Conservative Party to deal effectively with the following issues in Scotland:\
+-[is4ga] Looking after the economy\
+-[is4gc] Energy and natural resources \
+-[is4gd] Immigration\
+-[is4ge] Law and order\
+-[is4gf] Health\
+-[is4gg] Education\
+-[is4gh] Tackling inequality\
+-[is4gi] Standing up for Scotland\
+<1>  0 \'96 no trust at all\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 great deal of trust\
+<99>  Don\'92t know\
+\
+[is5grid]\{grid\}Using the same scale, how far do you trust the Scottish Labour Party to deal effectively with the following issues in Scotland:\
+-[is5ga] Looking after the economy\
+-[is5gc] Energy and natural resources\
+-[is5gd] Immigration\
+-[is5ge] Law and order\
+-[is5gf] Health\
+-[is5gg] Education\
+-[is5gh] Tackling inequality\
+-[is5gi] Standing up for Scotland\
+<1>  0 \'96 no trust at all\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 great deal of trust\
+<99>  Don\'92t know\
+\
+[is6grid]\{grid\}And how far do you trust the SNP to deal effectively with the following issues in Scotland:\
+-[is6ga] Looking after the economy\
+-[is6gc] Energy and natural resources \
+-[is6gd] Immigration\
+-[is6ge] Law and order\
+-[is6gf] Health\
+-[is6gg] Education\
+-[is6gh] Tackling inequality\
+-[is6gi] Standing up for Scotland\
+<1>  0 \'96 no trust at all\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 great deal of trust\
+<99>  Don\'92t know\
+\
+\
+\
+[is7grid]\{grid roworder=randomize\} How much do you agree or disagree with the following statements:\
+-[is7a] We cannot pay for decent public services just by taxing very rich people \'96 we all need to contribute a bit more\
+-[is7b] Free university tuition in Scotland is not sustainable in the long term\
+-[is7c] You should not be entitled to a free bus pass if you are over 60 but are still employed\
+-[is7d] Levels of public spending in Scotland should be reduced to the levels in the rest of the UK\
+-[is7e] We should look to increase the number of immigrants coming into Scotland\
+-[is7f]  There should be a transfer of powers from the Scottish Parliament to local authorities\
+-[is7g] The Scottish Government should ban drilling for shale gas (fracking) in Scotland  \
+-[is7h] The Scottish Parliament should use its new powers to reopen the issue of access to abortion in Scotland\
+<1>  Agree strongly\
+<2>  Tend to agree\
+<3>  Neither agree nor disagree\
+<4>  Tend to disagree\
+<5>  Disagree strongly\
+<6> Don\'92t know\
+\
+\
+\
+[is8_1] Now, some questions about where you and the parties stand on various issues. The first scale concerns the future of Scotland and the union.  Where would you place yourself on the scale 0 to 10, where 0 means \'91abolishing the Scottish Parliament and returning to pre-devolution arrangements\'92, and 10 means \'91independence for Scotland\'92?\
+<1>  0 \'96 Abolishing the Scottish Parliament\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Independence for Scotland \
+<99>  Don\'92t know\
+\
+[is8grid] \{grid roworder=randomize\} And where would you place the following parties\'85\
+-[is8a] Labour Party\
+-[is8b] Conservative Party\
+-[is8c] Liberal Democrats\
+-[is8d] Scottish National Party\
+<1>  0 \'96 Abolishing the Scottish Parliament\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Independence for Scotland \
+<99>  Don\'92t know\
+\
+\
+\
+[is9_1] \{single\} And now here\'92s a question about the European Union. Where would you place yourself on a scale from 0 to 10, where 0 means \'91European Unification has already gone too far\'92 and 10 means \'91European Unification should be pushed further\'92,\
+<1>  0 \'96 European unification has already gone too far\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 European unification should be pushed further \
+<99>  Don\'92t know\
+\
+[is9grid] \{grid roworder=randomize\}And where would you place the following parties\'85\
+-[is9a] Labour Party\
+-[is9b] Conservative Party\
+-[is9c] Liberal Democrats\
+-[is9d] Scottish National Party\
+<1>  0 \'96 European unification has already gone too far\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 European unification should be pushed further\
+\
+\
+[is10_1] \{single\} And now here\'92s a question about taxes.  Using a 0 to 10 scale, where 0 means that \'91government should cut taxes and spend much less on health and social services\'92, and 10 means that \'91government should raise taxes a lot and spend much more on health and social services\'92, where would you place yourself?\
+<1>  0 \'96 Government should cut taxes a lot and spend much less\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Government should raise taxes a lot and spend much more \
+<99>  Don\'92t know\
+\
+[is82grid] \{grid roworder=randomize\}And where would you place the following parties\'85\
+-[is82a] Labour Party\
+-[is82b] Conservative Party\
+-[is82c] Liberal Democrats\
+-[is82d] Scottish National Party\
+<1>  0 \'96 Government should cut taxes a lot and spend much less\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Government should raise taxes a lot and spend much more \
+<99>  Don\'92t know\
+\
+\
+\
+[is8tax]\{single\} As of 2015, the Scottish Parliament was given new taxation powers. What do you think the Scottish Government should do with these new powers?\
+<1> Should increase tax rates\
+<2> Should set taxes at the same rates as the rest of the UK\
+<3> Should reduce taxes\
+<99> Don't know\
+\
+\
+#PARTIES AND LEADERS#\
+\
+[ap5grid]\{grid roworder=randomize\} Next, some questions about how you feel about the parties and their leaders.  On the whole, would you describe the following political parties as\'85?\
+-[ap5a]Conservative\
+-[ap5b]Labour\
+-[ap5c]Liberal Democrats\
+-[ap5d]SNP\
+<1>  Capable of strong government\
+<2>  Not capable of strong government\
+<3>  Not sure\
+\
+[ap6grid]\{grid roworder=randomize\}And, on the whole, would you describe the following political parties as\'85?\
+-[ap6a]Conservative\
+-[ap6b]Labour\
+-[ap6c]Liberal Democrats\
+-[ap6d]SNP\
+<1>  United\
+<2>  Divided\
+<3>  Not sure\
+\
+\
+[ap8grid]\{grid roworder=randomize\}And would you describe the following political parties as\'85?\
+-[ap8a]Conservative\
+-[ap8b]Labour\
+-[ap8c]Liberal Democrats\
+-[ap8d]SNP\
+<1>  In touch with ordinary people\
+<2>  Out of touch with ordinary people\
+<3>  Not sure\
+\
+[ap9grid]\{grid roworder=randomize\}Finally, would you say the following political parties\'85?\
+-[ap9a]Conservative\
+-[ap9b]Labour\
+-[ap9c]Liberal Democrats\
+-[ap9d]SNP\
+<1>  Keep their promises\
+<2>  Break their promises\
+<3>  Not sure\
+\
+\
+[ap10] \{single\} Considering everything that the SNP and Labour stand for, how much difference would you say there is between them?\
+<1> A great deal of difference\
+<2> Quite a lot of difference\
+<3> Some difference\
+<4> Not very much difference\
+<5> No difference at all\
+<6> Don\'92t know\
+\
+\
+[ap11grid]\{grid roworder=randomize\}Using a scale that runs from 0 to 10, where 0 means \'91strongly dislike\'92 and 10 means \'91strongly like\'92, how do you feel about\'85\
+-[ap11a] Conservative Party\
+-[ap11b] Labour Party\
+-[ap11c] Liberal Democrats\
+-[ap11d] SNP\
+-[ap11e] Green Party\
+-[ap11f] UKIP\
+<1>  0 \'96 Strongly dislike\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Strongly like\
+<99>  Don\'92t know\
+\
+[ap12grid]\{grid roworder=randomize\}On the same scale, where 0 means \'91strongly dislike\'92 and 10 means \'91strongly like\'92, please tell us how you feel about the following Scottish party leaders.  If you don\'92t recognise a name, then please just say \'93Don\'92t know\'94.\
+-[ap12a] Nicola Sturgeon\
+-[ap12b] Kezia Dugdale\
+-[ap12c] Ruth Davidson\
+-[ap12d] Willie Rennie\
+-[ap12e] Patrick Harvie\
+<1>  0 \'96 Strongly dislike\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Strongly like\
+<99>  Don\'92t know\
+\
+\
+[ap13grid]\{grid roworder=randomize\}Finally, on the same scale, please tell us how you feel about the following UK politicians?\
+-[ap13a] David Cameron\
+-[ap13b] Tim Farron\
+-[ap13c] Jeremy Corbyn\
+-[ap13d] Boris Johnson\
+-[ap13e] Nigel Farage\
+<1>  0 \'96 Strongly dislike\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Strongly like\
+<99>  Don\'92t know\
+\
+\
+\
+[debateViewing] \{single\} There have been two televised debates between the party leaders: the first (on 24th March) on BBC and the second (on 30th March) on STV.  So far as you can remember, did you happen to see either, both or neither of these?\
+<1> Didn\'92t see either of them\
+<2> Only saw the first one on BBC Scotland\
+<3> Only saw the second one on STV\
+<4> Saw both of them\
+<5> Can\'92t remember\
+\
+[debateHelp if debateViewing in [2,3,4]]\{single\} Which of these best describes the influence, if any, that the debates had on your choice?\
+<1>Didn\'92t have any impact \'96 my mind was already made up \
+<2>Made me think but didn\'92t change my mind\
+<3>Got me seriously thinking about changing my mind\
+<4>Changed my mind completely\
+\
+[pollAware]\{single\} There have been a number of opinion polls reported in the run-up to the election.  Which of these best describes how much attention you have paid to the opinion polls?\
+<1> I\'92ve paid a lot of attention to the poll results\
+<2> I\'92ve paid a little attention to the poll results\
+<3> I\'92ve paid no attention to the poll results\
+\
+\{module polling if pollAware in [1,2]\}\
+\
+[pollInfluence] \{single\} Which of these best describes the influence, if any, that the polls have had on your choice?\
+<1> Didn\'92t have any impact \'96 my mind was already made up \
+<2> Made me think but didn\'92t change my mind\
+<3> Got me seriously thinking about changing my mind\
+<4> Changed my mind completely\
+<5> Not sure\
+\
+[pollSaying] \{single order=randomize\} And which describes what the polls are saying:\
+<1>    SNP is far in the lead\
+<2>    Labour is far in the lead\
+<3>    Conservatives are far in the lead\
+<4>    SNP and Conservatives are neck and neck\
+<5>    SNP and Labour are neck and neck\
+<6fixed> Don\'92t know\
+\
+[pollImpact if pollInfluence in [3,4]] You previously said that the polls have got you thinking about changing your mind on who to vote for or changed your mind completely. Which of the following, if any, best described how the polls have changed your mind? \
+ <1> Made me more likely to vote for the party in the lead\
+ <2> Made me more likely to vote for another party\
+ <3> Something else\
+ <4> Don\'92t know\
+\
+[pollTurnout] And do you agree or disagree with the following statement: The polls made me think it was important for me to turnout to vote.\
+<1> Strongly agree\
+<2> Tend to agree\
+<3> Neither agree nor disagree\
+<4> Tend to disagree\
+<5> Strongly disagree \
+\
+\{end module polling\} \
+\
+[leaderVisitAware]\{multiple order=randomize\} To the best of your knowledge, have any of the party leaders visited your constituency within the last four weeks? If so, please indicate which one(s)? (Please tick all that apply.)\
+<1> Nicola Sturgeon\
+<2> Ruth Davidson\
+<3> Kezia Dugdale\
+<4> Willie Rennie\
+<5> Patrick Harvie\
+<6fixed> Someone else [leaderVisitAwareo]\{open\}\
+<7fixed xor> No visits that I\'92m aware of\
+\
+[leaderVisitInfluence if leaderVisitAware.has_any([1,2,3,4,5,6])] \{single\} Which of these best describes the influence, if any, that leader visit(s) had on your choice?\
+<1>    Got me seriously think about voting for this party\
+<2>    Got me seriously thinking about voting for another party\
+<3>    Changed my mind completely: I will vote for this party\
+<4>    Changed my mind completely: I will vote for another party\
+<5>    No change / influence\
+\
+\
+##Performance##\
+\
+\
+[ec3] \{single\} How much do you think the Westminster government\'92s policies influence the overall performance of Scotland\'92s economy?\
+<1>  A great deal\
+<2>  A fair amount\
+<3>  Not very much\
+<4>  None at all\
+<5>  Don't know\
+\
+[ec4] \{single\} How much do you think the Scottish government\'92s policies influence the overall performance of Scotland\'92s economy?\
+<1>  A great deal\
+<2>  A fair amount\
+<3>  Not very much\
+<4>  None at all\
+<5>  Don't know\
+\
+ \
+\
+[ec9grid]\{grid roworder=randomize\}Thinking now of the parties in Scotland, how effective do you think each would be at managing the impact of cuts from Westminster?\
+-[ec9a] Conservative\
+-[ec9b] Labour\
+-[ec9c] Liberal Democrats\
+-[ec9d] SNP\
+<1>  Very effective\
+<2>  Fairly effective\
+<3>  Not very effective\
+<4>  Not at all effective\
+<5>  Don\'92t know\
+ \
+\
+[is3a]\{single\} Since the last election to the Scottish Parliament in 2011, would you say that the standard of the health service in Scotland has increased or fallen?\
+<1>  Increased a lot\
+<2>  Increased a little\
+<3>  Stayed the same\
+<4>  Fallen a little\
+<5>  Fallen a lot\
+<6>  Don\'92t know\
+\
+[is3b]\{single\} And is this mainly the result of\'85\
+<1>  The policies of the UK government at Westminster\
+<2>  The policies of the Scottish Government\
+<3>  Both equally\
+<4>  Some other reason\
+<5>Don\'92t know\
+\
+\
+[is4a]\{single\} And what about the quality of education in Scotland? Has it increased or fallen since the last election to the Scottish Parliament in 2011?\
+<1>  Increased a lot\
+<2>  Increased a little\
+<3>  Stayed the same\
+<4>  Fallen a little\
+<5>  Fallen a lot\
+<6>  Don\'92t know\
+\
+[is4b]\{single\} And is this mainly the result of\'85\
+<1>  The policies of the UK government at Westminster\
+<2>  The policies of the Scottish Government\
+<3>  Both equally\
+<4>  Some other reason\
+<5>  Don\'92t know\
+\
+\
+[is5a]\{single\} What about the standard of law and order in Scotland? Has it increased or fallen since the last election to the Scottish Parliament in 2011?\
+<1>  Increased a lot\
+<2>  Increased a little\
+<3>  Stayed the same\
+<4>  Fallen a little\
+<5>  Fallen a lot\
+<6>  Don\'92t know\
+\
+[is5b]\{single\} And is this mainly the result of\'85\
+<1>  The policies of the UK government at Westminster\
+<2>  The policies of the Scottish Government\
+<3>  Both equally\
+<4>  Some other reason\
+<5>  Don\'92t know\
+\
+\
+\
+[is6a]\{single\} Finally, what about the economic situation for you and your family? Has it improved or declined since the last election to the Scottish Parliament in 2011?\
+<1>  Improved a lot\
+<2>  Improved a little\
+<3>  Stayed the same\
+<4>  Declined a little\
+<5>  Declined a lot\
+<6>  Don\'92t know\
+\
+[is6b]\{single\} And is this mainly the result of\'85\
+<1>  The policies of the UK government at Westminster\
+<2>  The policies of the Scottish Government\
+<3>  Both equally\
+<4>  Some other reason\
+<5>  Don\'92t know\
+\
+\
+[pe1]\{single\}More generally, how good or bad a job of running Britain do you think the Conservative government at Westminster has done in the last year?\
+<1>  Very good\
+<2>  Fairly good\
+<3>  Neither good nor bad\
+<4>  Fairly bad\
+<5>  Very bad\
+<6>  Don\'92t know\
+\
+\
+[pe4]\{single\}Now thinking about Scotland, how good or bad a job of running Scotland do you think the SNP Government at Holyrood has done since 2011?\
+<1>  Very good\
+<2>  Fairly good\
+<3>  Neither good nor bad\
+<4>  Fairly bad\
+<5>  Very bad\
+<6>  Don\'92t know\
+\
+\
+[pe5]\{single\}And if Labour had been leading the Scottish Government over the past four years, how good or bad a job of running Scotland do you think they would have done?\
+<1>  Very good\
+<2>  Fairly good\
+<3>  Neither good nor bad\
+<4>  Fairly bad\
+<5>  Very bad\
+<6>  Don\'92t know\
+\
+\
+[pe6]\{single\}And how about if the Conservatives had been leading the Scottish Government over the past four years \'96 how good or bad a job of running Scotland do you think they would have done?\
+<1>  Very good\
+<2>  Fairly good\
+<3>  Neither good nor bad\
+<4>  Fairly bad\
+<5>  Very bad\
+<6>  Don\'92t know\
+\
+\
+\
+\
+## Independence questions##\
+\
+[uk7] \{single\} Suppose that the SNP wins another majority in the election on 5th May and governs for the next five years. What do you think would be the party\'92s policy on another independence referendum?    \
+<1> They would hold one immediately\
+<2> They would hold one within two years\
+<3> They would hold one within five years\
+<4> They would not hold a referendum during this five-year term\
+<5> Not sure\
+\
+[uk8]And what do you think should be the Scottish government\'92s policy on another independence referendum?    \
+<1> They should hold one immediately\
+<2> They should hold one within two years\
+<3> They should hold one within five years\
+<4> They should not hold a referendum during this five-year term\
+<5> Not sure\
+\
+[uk8EUref] \{single\} And how much do you think the EU referendum will influence the SNP\'92s decision to hold another Scottish independence referendum? \
+<1>    A great deal \
+<2>    A fair amount \
+<3>    Not very much \
+<4>    Not at all \
+\
+\
+[uk8EUref2] If the UK votes to leave the EU in the June 2016 referendum, how sure are you about which side you would vote for in a referendum on Scottish independence?\
+<1>  0 \'96 Not at all sure\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely sure \
+\
+[uk9] If there was to be another referendum on Scottish independence, how sure are you about which side you would vote for?\
+<1>  0 \'96 Not at all sure\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely sure \
+\
+[uk10]\{single\} And how do you think you would vote in that referendum?\
+<1> I would vote "Yes to independence" \
+<2> I would vote "No to independence" \
+<3> Would not vote\
+<99> Don't know \
+\
+[uk11] And if the UK votes to stay in the EU in the June 2016 referendum, how sure are you about which side you would vote for in a referendum on Scottish independence?\
+<1>  0 \'96 Not at all sure\
+<2>  1\
+<3>  2\
+<4>  3\
+<5>  4\
+<6>  5\
+<7>  6\
+<8>  7\
+<9>  8\
+<10>  9\
+<11>  10 \'96 Absolutely sure \
+\
+[uk10repeat]\{single\} And how do you think you would vote in that referendum?\
+<1> I would vote "Yes to independence" \
+<2> I would vote "No to independence" \
+<3> Would not vote\
+<99> Don't know \
+\
+##general political values##\
+\
+[nationalIdentities1] \{scale 1 7 dk=1 dk_text="Don't know"\} Where would you place yourself on these scales?\
+-[britishness] Not at all British | Very strongly British\
+-[scottishness] Not at all Scottish | Very strongly Scottish\
+\
+\
+[socialTrustScale]\{scale 0 10 dk=1 dk_text="Don't know"\} Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people? Please answer on the following scale.\
+-[socialTrust] You can\'92t be too careful | Most people can be trusted\
+\
+\
+[riskscale]\{grid roworder=randomize\} Now here is a scale where 0 means \'91unwilling to take risks\'92 and 10 means \'91fully prepared to take risks\'92.  How willing are you to take risks:\
+-[riskGeneral] In general?\
+-[riskFinancial] In financial matters?    \
+<1> 0 \'96 Unwilling to take risks\
+<2> 1\
+<3> 2\
+<4> 3\
+<5> 4\
+<6> 5\
+<7> 6\
+<8> 7\
+<9> 8\
+<10> 9\
+<11> 10 \'96 Fully prepared to take risks\
+<99> Don't know\
+\
+[efficGeneral2]\{grid roworder=randomize\}To what extent do you agree or disagree with these statements? \
+-[efficDontCare2] Politicians don\'92t care much about what people like me think\
+-[efficNoSay2] People like me don\'92t have any say about what the government does\
+-[efficComplicated2] Sometimes politics and government seem so complicated that a person like me can\'92t really understand what\'92s going on\
+-[dutyToVote22] It is every citizen's duty to vote in an election\
+-[ca7e] This Scottish Parliament election has been completely over-shadowed by the EU referendum\
+<1>Strongly agree    \
+<2>Tend to agree\
+<3>Neither agree nor disagree\
+<4>Tend to disagree\
+<5>Strongly disagree\
+<6> Don\'92t know\
+\
+\
+\
+\
+\
+\
+##first vs second order##\
+\
+[uk1] \{single\}Now, some questions on a different topic.  Thinking back to last year\'92s election to the Westminster Parliament, do you remember which party you voted for then?  Or perhaps you didn't vote in that election?\
+<1> Did not vote/not eligible/too young to vote\
+<2> Voted Conservative\
+<3> Voted Labour\
+<4> Voted Liberal Democrat\
+<5> Voted SNP\
+<6> Voted Green\
+<7> Voted UKIP\
+<8> Voted for a different party [uk1o]\{open\}\
+<9> Don\'92t know/can\'92t remember\
+\
+\
+[uk2] \{single\} And if there were a Westminster election held tomorrow, which party would you vote for?\
+<1>  Conservative\
+<2>  Labour\
+<3>  Liberal Democrat \
+<4>  SNP\
+<5>  Green\
+<6>  UKIP\
+<7>  Other party [uk2o]\{open\}       \
+<8>  Would not vote \
+<9>  Don't know \
+\
+\
+\
+[uk3]If the election on May 5th this year were a General Election to the UK House of Commons, would you be more likely to vote than in a Scottish Parliament election, less likely to vote, or wouldn\'92t it make any difference?\
+<1>  More likely\
+<2>  Less likely        \
+<3>  Wouldn\'92t make any difference\
+\
+\
+[uk4 if uk3 == 1]\{multiple order=randomize\} Why would you be more likely to vote in a general election to the UK House of Commons? (Please tick all that apply)\
+<1> The Westminster Parliament has more influence over our lives than the Scottish Parliament\
+<2> There\'92s more difference between the parties at the UK level\
+<3> The voting system for Westminster elections produces an outcome with clear winners and losers\
+<4> I don\'92t approve of the Scottish Parliament\
+<5> It was obvious who was going to win this Scottish election\
+<6> I\'92m more interested in politics at Westminster\
+<7fixed>  Some other reason [uk4o]\{open\}\
+<8fixed xor>  Don\'92t know\
+\
+\
+\
+[elecStakes]\{grid roworder=randomize\} People disagree about the importance of different types of elections.  How much of a difference do you think it makes who wins the following?\
+-[scotElecStakes] Elections to the Scottish Parliament\
+-[genElecStakes] General elections to the UK House of Commons\
+-[localElecStakes] Elections to local councils \
+-[euroElecStakes] Elections to the European Parliament\
+<1>A great deal\
+<2>Quite a lot\
+<3>Some\
+<4>Not very much\
+<5>None at all\
+<6>Don\'92t know\
+\
+\
+#campaign#\
+\
+[ContactWhoPre] \{multiple order=randomize\} Could you indicate which, if any, campaigning organizations or parties have contacted you during the past four weeks? *Please select all that apply*.\
+<1> Campaign for the UK to Leave the EU\
+<2> Campaign for the UK to Remain in the EU\
+<3> Scottish National Party\
+<4> Scottish Labour Party\
+<5> Scottish Liberal Democrats\
+<6> Scottish Conservative Party\
+<7> Scottish Green Party\
+<8fixed> Any other campaigning organization [ContactWhoPreo]\{open\}\
+<99fixed xor> None of these \
+\
+\{module rongrid if ContactWhoPre.has_any([1,2,3,4,5,6,7,8])\}\
+\
+[ContactHowPre] \{grid-check roworder=randomize colorder=randomize\} Could you indicate all the ways that you have been contacted, again selecting all that apply?\
+-[ContactHowPre_g1] Telephone call\
+-[ContactHowPre_g2] Leaflet or letter delivered to your home\
+-[ContactHowPre_g4] A visit to your home\
+-[ContactHowPre_g5] Contact in the street\
+-[ContactHowPre_g6] Email\
+-[ContactHowPre_g7] Twitter\
+-[ContactHowPre_g8] Facebook\
+-[ContactHowPre_g9] Text message (SMS)\
+-[ContactHowPre_g10]\{fixed=1\} Other ways\
+<1 if 1 in ContactWhoPre> Campaign for the UK to Leave the EU\
+<2 if 2 in ContactWhoPre> Campaign for the UK to Remain in the EU\
+<3 if 3 in ContactWhoPre> Scottish National Party\
+<4 if 4 in ContactWhoPre> Scottish Labour Party\
+<5 if 5 in ContactWhoPre> Scottish Liberal Democrats\
+<6 if 6 in ContactWhoPre> Scottish Conservative Party\
+<7 if 7 in ContactWhoPre> Scottish Green Party\
+<8 if 8 in ContactWhoPre> Other campaigning organization\
+<99xor fixed> None of these \
+\
+\{end module rongrid\}\
+\
+\
+[ca6]\{multiple\} During the last 4 weeks, have you personally posted or shared any political content online e.g. through Facebook, Twitter, email or instant messaging? (Please tick any that apply)\
+<1>  Yes, on Facebook\
+<2>  Yes, on Twitter\
+<3>  Yes, via e-mail\
+<4>  Yes, through instant messaging\
+<5 xor> No, none of these\
+\
+\
+#Background#\
+\
+[ba1] To finish, a few questions about yourself and your background.  How often do you read a daily morning newspaper?\
+<1> Every day\
+<2> Quite often\
+<3> Rarely\
+<4> Never\
+\
+\
+[ba2 if ba1 !=4]Which daily morning newspaper do you read most often?\
+<1> Scottish Daily Express\
+<2> Scottish Daily Mail\
+<3> Scottish Daily Mirror\
+<4> Daily Star\
+<5> Scottish Sun\
+<6> Daily Record\
+<7> Daily Telegraph\
+<8> Financial Times\
+<9> Guardian\
+<10> Independent\
+<11> Times\
+<12> Scotsman\
+<13> (Glasgow) Herald\
+<14> (Aberdeen) Press and Journal\
+<15> Courier/Dundee Courier\
+<16> Other [ba2o] \{open\}\
+\
+[area1] Is your home (or your main home if you have more than one) in\'85\
+<1>  The centre of a city\
+<2>  An inner suburb of a city\
+<3>  An outer suburb of a city\
+<4>  The centre, or near the centre, of a larger town\
+<5>  The suburb/outskirts of a large town\
+<6>  A small or medium-sized town\
+<7>  A village\
+<8>  The countryside away from any villages or towns\
+<9> Don\'92t know\
+\
+\
+[ba3]What is your marital status?\
+<1> Married/in a civil partnership\
+<2> Living with a partner (but not married)\
+<3> Separated (after being married)\
+<4> Divorced\
+<5> Widowed\
+<6> Single (never married)\
+\
+[ba4]Which, if any, of the following best describes how you see yourself?\
+<1> Scottish not British\
+<2> More Scottish than British\
+<3> Equally Scottish and British\
+<4> More British than Scottish\
+<5> British not Scottish\
+<6> Other description [ba4o]\{open\}\
+<7> Don\'92t know\
+\
+\
+[ba5]Which of the following groups do you consider you belong to?\
+<4> Asian: of Indian origin\
+<5> Asian: of Pakistani origin\
+<6> Asian: of Bangladeshi origin\
+<7> Asian: of Chinese origin\
+<8> Asian: of other origin\
+<1> Black: of African origin\
+<2> Black: of Caribbean origin\
+<3> Black: of other origin\
+<9> White: of any European origin\
+<10> White: of other origin\
+<11> Mixed origin\
+<12> Other [ba5o]\{open\}\
+<13> Don\'92t know\
+\
+\
+[ba6] Do you regard yourself as belonging to any particular religion?\
+<1> Yes, I do\
+<2> No, I do not\
+<3> Prefer not to say\
+\
+\
+[ba7 if ba6 == 1] Which religion or denomination do you belong to?\
+<1> Church of England/ Anglican/ Episcopal\
+<2> Roman Catholic\
+<3> Presbyterian/ Church of Scotland\
+<4> Methodist\
+<5> Baptist\
+<6> United Reformed Church\
+<7> Free Presbyterian\
+<8> Brethren\
+<9> Jewish\
+<10> Hindu\
+<11> Islam/ Muslim\
+<12> Sikh\
+<13> Buddhist\
+<14> Other [ba7o]\{open\}\
+<15> Don\'92t know\
+\
+[ba8 if ba6 == 1]Apart from such special occasions as weddings, funerals and baptisms and so on, how often do you attend services or meetings connected with your religion nowadays?\
+<1> Once a week or more\
+<2> At least once everytwo weeks\
+<3> At least once a month\
+<4> At least twice a year\
+<5> At least once a year\
+<6> Less often\
+<7> Never or practically never\
+<8> Varies too much to say\
+\
+\
+[ba9] \{single\} Which of the following best describes the sort of work you do? (If you aren\'92t working now, please say what you did in your last job.)\
+<1> Professional or higher technical work (work that requires at least degree-level qualifications, e.g. doctor)\
+<2> Accountant, school teacher, university lecturer, social worker, systems analyst\
+<3> Manager or senior administrator (e.g. company director, finance manager, personnel manager, senior sales manager, senior local government officer)\
+<4> Clerical (e.g. clerk, secretary)\
+<5> Sales or services (e.g. commercial traveller, shop assistant, nursery nurse, care assistant, paramedic)\
+<6> Small business owner (e.g. shop owner, small builder, restaurant owner)\
+<7> Foreman or supervisor of other workers (e.g. building site foreman, supervisor of cleaning workers)\
+<8> Skilled Manual Work (e.g. plumber, electrician, fitter, train driver, cook, hairdresser)\
+<9> Semi-skilled or unskilled manual work (e.g. machine operator, assembler, postman, waitress, cleaner, labourer, driver, bar-worker, call-centre worker)\
+<10> Other [ba9o]\{open\}\
+<11> Never worked\
+\
+\
+[ba10] Which type of the following organisations do/did you work for?\
+<1> Private sector firm or company (e.g. limited company, PLC, small business)\
+<2> Nationalised industry or public corporation (e.g. post office, BBC)\
+<3> Other public sector employer (e.g. central government, Civil Service, LEA, NHS, Police, armed forces)\
+<4> Charity/voluntary sector (e.g. charitable companies, churches, trade unions)\
+<5> Other [ba10o]\{open\}\
+<6> Never worked\
+\
+\
+[ba11] \{multiple\} Are you now or have you ever been a member of a trade union or staff association? (Please tick all that apply.)\
+<1> Yes, trade union\
+<2> Yes, staff association\
+<3 xor> Neither\
+\
+\
+[ba12] Which of the following is the main source of income for you at present?\
+<1> Earnings from employment (own or spouse/ partner's)\
+<2> Occupational pension(s) \'96 from previous employer(s)\
+<3> State retirement or widow's/ widower\'92s pension(s)\
+<4> Jobseeker's Allowance/ Unemployment benefit\
+<5> Income Support or family credit\
+<6> Invalidity, sickness or disabled pension or benefit(s)\
+<7> Other state benefit\
+<8> Interest from savings or investments\
+<9> Student grant or loan\
+<10> Dependent on parents/ other relatives\
+<11> Other main source [ba12o]\{open\}\
+<12> Don't know\
+\
+\
+[ba13]And, which of the following represents the total income of your household from all sources before tax \'96 including benefits, saving and so on?\
+<1> Less than \'a35,000\
+<2> \'a35,000 to \'a310,000\
+<3> \'a310,001 to \'a315,000\
+<4> \'a315,001 to \'a320,000\
+<5> \'a320,001 to- \'a325,000\
+<6> \'a325,001 to \'a330,000\
+<7> \'a330,001 to \'a335,000\
+<8> \'a335,001 to \'a340,000\
+<9> \'a340,001 to \'a345,000\
+<10> \'a345,001 to \'a350,000\
+<11> \'a350,001 to \'a360,000\
+<12> \'a360,001 to \'a370,000\
+<13> \'a370,001 and more\
+<14> Prefer not to say\
+<15> Don't know\
+\
+\
+[ba14]At what age did you finish full-time education?\
+<1> 15 or younger\
+<2> 16\
+<3> 17\
+<4> 18\
+<5> 19 or older\
+<6> Still at school in full-time education\
+<7> Still at university in full-time education\
+\
+\
+[ba15]Do you have any educational or work-related qualifications?\
+<1> Yes, I do\
+<2> No, I do not\
+\
+\
+[ba16 if ba15 == 1] Which of these is the _highest_ qualification you have?\
+<1> Postgraduate degree\
+<2> University or CNAA first degree, e.g. BA, BSc\
+<3> University or CNAA diploma\
+<4> Teaching qualification (not degree)\
+<5> Nursing qualification (e.g. SEN, SRC, SCM, RGC)\
+<6> Higher National Certificate (HNC) or Higher National Diploma (HND), City & Guilds level 4 (Full Technological), NVW4/ SVQ4 or NVQ5/ SVQ5\
+<7> Scottish Higher/Higher Still Grades, Scottish SLC/ SUPE at Higher Grade, Scottish Higher School Certificate\
+<8> GCE A level, S level, A2 level, AS level, International Baccalaureate\
+<9> Ordinary National Certificate (ONC) or Diploma (OND), City & Guilds level 3 (Advanced/ Final), NVQ/ SVQ level 3\
+<10> Scottish Ordinary Bands A-C or pass, Scottish Standard Grades 1-3 or Pass/ Lower Certificate\
+<11> GCSE A*-C, CSE grade 1, GCE O level grade A \'96C, School Certificate\
+<12> GCSE grades D-G, CSE grades 2-5, GCE O level grade D \'96E, Short Course GCSE, Vocational GCSE\
+<13> City & Guilds level 2 (Craft/ Intermediate/ Ordinary) or Scotvec Higher National Units or NVQ2/ SVQ2\
+<14> City & Guilds level 1, Scotvec National Certificate Modules, NVQ1/ SVQ1\
+<15> Clerical and commercial qualification (e.g. typing, shorthand, book-keeping)\
+<16> Recognised trade apprenticeship completed\
+<17> Youth training certificate, skill seekers\
+<18> Other technical, professional or higher qualification [ba16o]\{open\}\
+}
